@@ -25,6 +25,10 @@
 $ npm i electron-windows --save
 ```
 
+## Demo
+
+![](./sceenshot.png)
+
 ## APIs
 
 ### init
