@@ -26,6 +26,7 @@
     "nyc": "*"
   },
   "scripts": {
+    "dev": "electron ./start.js",
     "test": "nyc --reporter=lcov --reporter=text mocha",
     "lint": "eslint . --fix",
     "contributor": "git-contributor"
