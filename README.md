@@ -17,7 +17,7 @@
 [download-image]: https://img.shields.io/npm/dm/electron-windows.svg?style=flat-square
 [download-url]: https://npmjs.org/package/electron-windows
 
-> electron-windows
+> Manage multiple windows of Electron gracefully and provides powerful features.
 
 ## Installment
 
@@ -27,11 +27,40 @@ $ npm i electron-windows --save
 
 ## APIs
 
+### init
+
+```javascript
+const WindowManager = require('electron-windows');
+const windowManager = new WindowManager();
+```
+
 ### create
 
 ```javascript
-
+const winRef = windowManager.create({
+  name: 'window1',
+  loadingView: {
+    url: '',
+  },
+  browserWindow: {
+    width: 800,
+    height: 600,
+    titleBarStyle: 'hidden',
+    title: 'demo',
+    show: false,
+    webPreferences: {
+      nodeIntegration: app.isDev,
+      webSecurity: true,
+      webviewTag: true,
+    },
+  },
+  openDevTools: true,
+});
 ```
+
+## TODO
+
+- [ ] support storage of window's size and other configuration
 
 ## License
 

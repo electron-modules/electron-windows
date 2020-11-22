@@ -4,7 +4,8 @@ const assert = require('assert');
 
 const WindowManager = require('..');
 
-describe('test', () => {
+describe('./test/electron-windows.test.js', () => {
   it('should be ok', () => {
+    assert(WindowManager);
   });
 });
