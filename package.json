@@ -1,11 +1,14 @@
 {
   "name": "electron-windows",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Manage multiple windows of Electron gracefully and provides powerful features.",
   "keywords": [
     "electron",
     "window",
     "windows"
+  ],
+  "files": [
+    "lib"
   ],
   "main": "index.js",
   "repository": {
