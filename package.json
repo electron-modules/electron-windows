@@ -13,6 +13,7 @@
     "url": "git://github.com/xudafeng/electron-windows.git"
   },
   "dependencies": {
+    "electron": "^9.2.1",
     "lodash": "4"
   },
   "devDependencies": {

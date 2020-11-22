@@ -33,6 +33,10 @@ $ npm i electron-windows --save
 
 ```
 
+## TODO
+
+- [ ] support storage of window's size and other configuration
+
 ## License
 
 The MIT License (MIT)
