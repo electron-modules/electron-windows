@@ -4,7 +4,7 @@ npm-debug.log
 .idea/*
 Thumbs.db
 .nyc_output
-build/
+coverage
 *.gz
 *.sw*
 *.un~

@@ -1,6 +1,6 @@
 {
   "name": "electron-windows",
-  "version": "0.1.3",
+  "version": "0.1.5",
   "description": "Manage multiple windows of Electron gracefully and provides powerful features.",
   "keywords": [
     "electron",
@@ -26,6 +26,7 @@
     "nyc": "*"
   },
   "scripts": {
+    "dev": "electron ./start.js",
     "test": "nyc --reporter=lcov --reporter=text mocha",
     "lint": "eslint . --fix",
     "contributor": "git-contributor"

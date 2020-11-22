@@ -8,8 +8,8 @@
 
 [npm-image]: https://img.shields.io/npm/v/electron-windows.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/electron-windows
-[travis-image]: https://img.shields.io/travis/xudafeng/electron-windows.svg?style=flat-square
-[travis-url]: https://travis-ci.org/xudafeng/electron-windows
+[travis-image]: https://api.travis-ci.com/xudafeng/electron-windows.svg?branch=master
+[travis-url]: https://travis-ci.com/github/xudafeng/electron-windows
 [coveralls-image]: https://img.shields.io/coveralls/xudafeng/electron-windows.svg?style=flat-square
 [coveralls-url]: https://coveralls.io/r/xudafeng/electron-windows?branch=master
 [node-image]: https://img.shields.io/badge/node.js-%3E=_8-green.svg?style=flat-square
@@ -24,6 +24,10 @@
 ```bash
 $ npm i electron-windows --save
 ```
+
+## Demo
+
+![](./sceenshot.png)
 
 ## APIs
 
