@@ -65,6 +65,7 @@ const winRef = windowManager.create({
 ## TODO
 
 - [ ] support storage of window's size and other configuration
+- [ ] clone pointed window
 
 ## License
 
