@@ -19,6 +19,18 @@
 
 > Manage multiple windows of Electron gracefully and provides powerful features.
 
+<!-- GITCONTRIBUTOR_START -->
+
+## Contributors
+
+|[<img src="https://avatars1.githubusercontent.com/u/1011681?v=4" width="100px;"/><br/><sub><b>xudafeng</b></sub>](https://github.com/xudafeng)<br/>|[<img src="https://avatars3.githubusercontent.com/u/12660278?v=4" width="100px;"/><br/><sub><b>ColaDaddyz</b></sub>](https://github.com/ColaDaddyz)<br/>|
+| :---: | :---: |
+
+
+This project follows the git-contributor [spec](https://github.com/xudafeng/git-contributor), auto updated at `Fri Dec 11 2020 11:31:32 GMT+0800`.
+
+<!-- GITCONTRIBUTOR_END -->
+
 ## Installment
 
 ```bash
