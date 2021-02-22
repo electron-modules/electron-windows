@@ -55,7 +55,7 @@ class App {
   }
 
   bindIPC() {
-    ipcMain.on('new-window', (_, data) => {
+    ipcMain.on('new-window', () => {
       const postion = getRandomPostion();
       const window = this.windowManager.create({
         name: Date.now(),
@@ -78,7 +78,7 @@ class App {
       console.log(this.windowManager);
     });
 
-    ipcMain.on('new-online-window', (_, data) => {
+    ipcMain.on('new-online-window', () => {
       const postion = getRandomPostion();
       const window = this.windowManager.create({
         name: Date.now(),
@@ -101,7 +101,7 @@ class App {
       console.log(this.windowManager);
     });
 
-    ipcMain.on('close-window', (_, data) => {
+    ipcMain.on('close-window', (_) => {
       const window = BrowserWindow.fromWebContents(_.sender);
       window.close();
       console.log(this.windowManager);
