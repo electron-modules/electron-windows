@@ -43,9 +43,11 @@ class App {
       },
       browserWindow: {
         webPreferences: {
+          enableRemoteModule: true,
           nodeIntegration: true,
           webSecurity: true,
           webviewTag: true,
+          contextIsolation: false,
           preload: path.join(__dirname, 'renderer', 'preload.js'),
         },
       },
