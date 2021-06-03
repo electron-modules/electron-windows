@@ -51,8 +51,10 @@ class App {
           preload: path.join(__dirname, 'renderer', 'preload.js'),
         },
       },
+      openDevTools: false,
     });
     mainWindow.loadURL(mainUrl);
+    this.mainWindow = mainWindow;
     this.bindIPC();
   }
 

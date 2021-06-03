@@ -1,9 +1,19 @@
 'use strict';
 
 document.querySelector('#new').addEventListener('click', () => {
-  window.ipcRenderer.send('new-window');
+  window._electron_bridge.ipcRenderer.send('new-window');
 }, false);
 
 document.querySelector('#new-online').addEventListener('click', () => {
-  window.ipcRenderer.send('new-online-window');
+  window._electron_bridge.ipcRenderer.send('new-online-window');
+}, false);
+
+document.querySelector('#play-game').addEventListener('click', () => {
+  const className = 'custom-iframe';
+  const elem = document.querySelector(`.${className}`);
+  if (elem) return;
+  const iframe = document.createElement('iframe');
+  iframe.src = 'https://xudafeng.github.io';
+  iframe.className = className;
+  document.body.appendChild(iframe);
 }, false);
