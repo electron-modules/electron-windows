@@ -4,7 +4,7 @@ const url = require('url');
 const path = require('path');
 const _ = require('lodash');
 const WindowManager = require('..');
-const { ipcMain, screen, BrowserWindow } = require('electron');
+const { ipcMain, screen, BrowserWindow, desktopCapturer } = require('electron');
 
 const loadingUrl = url.format({
   pathname: path.join(__dirname, 'renderer', 'loading.html'),
@@ -51,8 +51,10 @@ class App {
           preload: path.join(__dirname, 'renderer', 'preload.js'),
         },
       },
+      openDevTools: false,
     });
     mainWindow.loadURL(mainUrl);
+    this.mainWindow = mainWindow;
     this.bindIPC();
   }
 

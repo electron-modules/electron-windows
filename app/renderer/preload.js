@@ -1,5 +1,10 @@
 'use strict';
 
-const { ipcRenderer } = require('electron');
+const { writeFile } = require('fs');
+const { ipcRenderer, desktopCapturer } = require('electron');
 
-window.ipcRenderer = ipcRenderer;
+window._electron_bridge = {
+  ipcRenderer,
+  desktopCapturer,
+  writeFile,
+};
