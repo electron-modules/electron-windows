@@ -1,20 +1,23 @@
 # electron-windows
 
+[![electron modules][electron-modules-image]][electron-modules-url]
 [![NPM version][npm-image]][npm-url]
 [![build status][travis-image]][travis-url]
 [![Test coverage][coveralls-image]][coveralls-url]
 [![node version][node-image]][node-url]
 [![npm download][download-image]][download-url]
 
-[npm-image]: https://img.shields.io/npm/v/electron-windows.svg?style=flat-square
+[electron-modules-image]: https://img.shields.io/badge/electron-modules-blue.svg
+[electron-modules-url]: https://github.com/xudafeng/electron-modules
+[npm-image]: https://img.shields.io/npm/v/electron-windows.svg
 [npm-url]: https://npmjs.org/package/electron-windows
 [travis-image]: https://api.travis-ci.com/xudafeng/electron-windows.svg?branch=master
 [travis-url]: https://travis-ci.com/github/xudafeng/electron-windows
-[coveralls-image]: https://img.shields.io/coveralls/xudafeng/electron-windows.svg?style=flat-square
+[coveralls-image]: https://img.shields.io/coveralls/xudafeng/electron-windows.svg
 [coveralls-url]: https://coveralls.io/r/xudafeng/electron-windows?branch=master
-[node-image]: https://img.shields.io/badge/node.js-%3E=_8-green.svg?style=flat-square
+[node-image]: https://img.shields.io/badge/node.js-%3E=_8-green.svg
 [node-url]: http://nodejs.org/download/
-[download-image]: https://img.shields.io/npm/dm/electron-windows.svg?style=flat-square
+[download-image]: https://img.shields.io/npm/dm/electron-windows.svg
 [download-url]: https://npmjs.org/package/electron-windows
 
 > Manage multiple windows of Electron gracefully and provides powerful features.
