@@ -8,13 +8,13 @@
 [![npm download][download-image]][download-url]
 
 [electron-modules-image]: https://img.shields.io/badge/electron-modules-blue.svg
-[electron-modules-url]: https://github.com/xudafeng/electron-modules
+[electron-modules-url]: https://github.com/electron-modules/electron-modules
 [npm-image]: https://img.shields.io/npm/v/electron-windows.svg
 [npm-url]: https://npmjs.org/package/electron-windows
-[travis-image]: https://api.travis-ci.com/xudafeng/electron-windows.svg?branch=master
-[travis-url]: https://travis-ci.com/github/xudafeng/electron-windows
-[coveralls-image]: https://img.shields.io/coveralls/xudafeng/electron-windows.svg
-[coveralls-url]: https://coveralls.io/r/xudafeng/electron-windows?branch=master
+[travis-image]: https://api.travis-ci.com/electron-modules/electron-windows.svg?branch=master
+[travis-url]: https://travis-ci.com/github/electron-modules/electron-windows
+[coveralls-image]: https://img.shields.io/coveralls/electron-modules/electron-windows.svg
+[coveralls-url]: https://coveralls.io/r/electron-modules/electron-windows?branch=master
 [node-image]: https://img.shields.io/badge/node.js-%3E=_8-green.svg
 [node-url]: http://nodejs.org/download/
 [download-image]: https://img.shields.io/npm/dm/electron-windows.svg
@@ -26,11 +26,11 @@
 
 ## Contributors
 
-|[<img src="https://avatars1.githubusercontent.com/u/1011681?v=4" width="100px;"/><br/><sub><b>xudafeng</b></sub>](https://github.com/xudafeng)<br/>|[<img src="https://avatars3.githubusercontent.com/u/12660278?v=4" width="100px;"/><br/><sub><b>ColaDaddyz</b></sub>](https://github.com/ColaDaddyz)<br/>|
+|[<img src="https://avatars1.githubusercontent.com/u/1011681?v=4" width="100px;"/><br/><sub><b>electron-modules</b></sub>](https://github.com/electron-modules)<br/>|[<img src="https://avatars3.githubusercontent.com/u/12660278?v=4" width="100px;"/><br/><sub><b>ColaDaddyz</b></sub>](https://github.com/ColaDaddyz)<br/>|
 | :---: | :---: |
 
 
-This project follows the git-contributor [spec](https://github.com/xudafeng/git-contributor), auto updated at `Fri Dec 11 2020 11:31:32 GMT+0800`.
+This project follows the git-contributor [spec](https://github.com/electron-modules/git-contributor), auto updated at `Fri Dec 11 2020 11:31:32 GMT+0800`.
 
 <!-- GITCONTRIBUTOR_END -->
 

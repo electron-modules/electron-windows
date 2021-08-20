@@ -13,7 +13,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/xudafeng/electron-windows.git"
+    "url": "git://github.com/electron-modules/electron-windows.git"
   },
   "dependencies": {
     "electron": "11.3.0",
