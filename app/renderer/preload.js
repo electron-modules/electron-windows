@@ -1,5 +1,7 @@
 'use strict';
 
+console.log('preload');
+
 const { writeFile } = require('fs');
 const { ipcRenderer, desktopCapturer } = require('electron');
 
