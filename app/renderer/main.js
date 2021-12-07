@@ -1,11 +1,11 @@
 'use strict';
 
 document.querySelector('#new').addEventListener('click', () => {
-  window._electron_bridge.ipcRenderer.send('new-window');
+  window._electron_bridge.send('new-window');
 }, false);
 
 document.querySelector('#new-online').addEventListener('click', () => {
-  window._electron_bridge.ipcRenderer.send('new-online-window');
+  window._electron_bridge.send('new-online-window');
 }, false);
 
 document.querySelector('#play-game').addEventListener('click', () => {
@@ -16,4 +16,8 @@ document.querySelector('#play-game').addEventListener('click', () => {
   iframe.src = 'https://xudafeng.github.io';
   iframe.className = className;
   document.body.appendChild(iframe);
+}, false);
+
+document.querySelector('#debug').addEventListener('click', () => {
+  window._electron_bridge.send('open-devtools');
 }, false);

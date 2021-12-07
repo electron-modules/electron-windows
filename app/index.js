@@ -47,7 +47,6 @@ class App {
           nodeIntegration: true,
           webSecurity: true,
           webviewTag: true,
-          contextIsolation: false,
           preload: path.join(__dirname, 'renderer', 'preload.js'),
         },
       },
@@ -109,6 +108,11 @@ class App {
       const window = BrowserWindow.fromWebContents(_.sender);
       window.close();
       console.log(this.windowManager);
+    });
+
+    ipcMain.on('open-devtools', (_) => {
+      const window = BrowserWindow.fromWebContents(_.sender);
+      window.openDevTools();
     });
   }
 }
