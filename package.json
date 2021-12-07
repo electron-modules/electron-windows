@@ -16,7 +16,7 @@
     "url": "git://github.com/electron-modules/electron-windows.git"
   },
   "dependencies": {
-    "electron": "^13.0.0",
+    "electron": "13",
     "lodash": "^4.17.21"
   },
   "devDependencies": {
