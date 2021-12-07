@@ -6,11 +6,12 @@ document.querySelector('#close').addEventListener('click', () => {
 
 document.querySelector('#write').addEventListener('click', () => {
   const data = 'write local file successfully';
-  window._electron_bridge.writeFile('demo.txt', data, (err) => {
+  const fileName = 'file.txt';
+  window._electron_bridge.writeFile(fileName, data, (err) => {
     if (err) {
       console.log(err);
     } else {
-      console.log(window._electron_bridge.readFileSync('demo.txt', 'utf8'));
+      console.log(window._electron_bridge.readFileSync(fileName, 'utf8'));
     }
   });
 }, false);
