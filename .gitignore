@@ -1,10 +1,8 @@
 .DS_Store
 node_modules
-npm-debug.log
-.idea/*
-Thumbs.db
 .nyc_output
 coverage
+file.txt
 *.gz
 *.sw*
 *.un~

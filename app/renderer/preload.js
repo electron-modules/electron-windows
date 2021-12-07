@@ -1,10 +1,16 @@
 'use strict';
 
-const { writeFile } = require('fs');
-const { ipcRenderer, desktopCapturer } = require('electron');
+const { writeFile, readFileSync } = require('fs');
+const { ipcRenderer, desktopCapturer, contextBridge } = require('electron');
 
-window._electron_bridge = {
-  ipcRenderer,
-  desktopCapturer,
-  writeFile,
-};
+contextBridge.exposeInMainWorld(
+  '_electron_bridge',
+  {
+    send: (channel, args) => {
+      ipcRenderer.send(channel, args);
+    },
+    writeFile,
+    readFileSync,
+    desktopCapturer,
+  }
+);

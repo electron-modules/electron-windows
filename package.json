@@ -1,6 +1,6 @@
 {
   "name": "electron-windows",
-  "version": "0.4.0",
+  "version": "13.0.0",
   "description": "Manage multiple windows of Electron gracefully and provides powerful features.",
   "keywords": [
     "electron",
@@ -16,11 +16,11 @@
     "url": "git://github.com/electron-modules/electron-windows.git"
   },
   "dependencies": {
-    "electron": "11.3.0",
-    "lodash": "4"
+    "electron": "13",
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
-    "eslint": "^4.12.1",
+    "eslint": "7",
     "eslint-config-egg": "^5.1.1",
     "eslint-plugin-mocha": "^4.11.0",
     "git-contributor": "*",
