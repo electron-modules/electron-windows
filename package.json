@@ -1,6 +1,6 @@
 {
   "name": "electron-windows",
-  "version": "13.0.0",
+  "version": "17.0.0",
   "description": "Manage multiple windows of Electron gracefully and provides powerful features.",
   "keywords": [
     "electron",
@@ -16,7 +16,7 @@
     "url": "git://github.com/electron-modules/electron-windows.git"
   },
   "dependencies": {
-    "electron": "13",
+    "electron": "17",
     "lodash": "^4.17.21"
   },
   "devDependencies": {
