@@ -1,15 +1,15 @@
 # electron-windows
 
 [![NPM version][npm-image]][npm-url]
-[![build status][travis-image]][travis-url]
+[![CI][CI-image]][CI-url]
 [![Test coverage][coveralls-image]][coveralls-url]
 [![node version][node-image]][node-url]
 [![npm download][download-image]][download-url]
 
 [npm-image]: https://img.shields.io/npm/v/electron-windows.svg
 [npm-url]: https://npmjs.org/package/electron-windows
-[travis-image]: https://api.travis-ci.com/electron-modules/electron-windows.svg?branch=master
-[travis-url]: https://travis-ci.com/github/electron-modules/electron-windows
+[CI-image]: https://github.com/electron-modules/electron-windows/actions/workflows/ci.yml/badge.svg
+[CI-url]: https://github.com/electron-modules/electron-windows/actions/workflows/ci.yml
 [coveralls-image]: https://img.shields.io/coveralls/electron-modules/electron-windows.svg
 [coveralls-url]: https://coveralls.io/r/electron-modules/electron-windows?branch=master
 [node-image]: https://img.shields.io/badge/node.js-%3E=_8-green.svg
