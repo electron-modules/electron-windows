@@ -1,6 +1,6 @@
 {
   "name": "electron-windows",
-  "version": "18.0.1",
+  "version": "18.0.2",
   "description": "Manage multiple windows of Electron gracefully and provides powerful features.",
   "keywords": [
     "electron",
