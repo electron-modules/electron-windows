@@ -3,7 +3,7 @@
 const { BrowserWindow } = require('electron');
 const Electrom = require('electrom');
 
-module.exports = function () {
+module.exports = function() {
   const {
     BROWSER_WINDOW_ASSETS_PATH,
     BROWSER_WINDOW_PRELOAD_PATH,
