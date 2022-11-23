@@ -20,6 +20,7 @@
     "lodash": "^4.17.21"
   },
   "devDependencies": {
+    "electrom": "19",
     "eslint": "7",
     "eslint-config-egg": "^5.1.1",
     "eslint-plugin-mocha": "^4.11.0",
