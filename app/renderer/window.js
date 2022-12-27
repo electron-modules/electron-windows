@@ -4,6 +4,10 @@ document.querySelector('#close').addEventListener('click', () => {
   window._electron_bridge.send('close-window');
 }, false);
 
+document.querySelector('#blur').addEventListener('click', () => {
+  window._electron_bridge.send('blur-window');
+}, false);
+
 document.querySelector('#write').addEventListener('click', () => {
   const data = 'write local file successfully';
   const fileName = 'file.txt';

@@ -110,6 +110,12 @@ class App {
       console.log(this.windowManager);
     });
 
+    ipcMain.on('blur-window', (_) => {
+      const window = BrowserWindow.fromWebContents(_.sender);
+      window.blur();
+      console.log(window);
+    });
+
     ipcMain.on('open-devtools', (_) => {
       const window = BrowserWindow.fromWebContents(_.sender);
       window.openDevTools();
