@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "electron-json-storage-alt": "18",
-    "eslint": "8",
+    "eslint": "7",
     "eslint-config-egg": "^5.1.1",
     "eslint-plugin-mocha": "^4.11.0",
     "git-contributor": "*",
