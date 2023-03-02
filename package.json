@@ -1,6 +1,6 @@
 {
   "name": "electron-windows",
-  "version": "18.1.0",
+  "version": "18.2.0",
   "description": "Manage multiple windows of Electron gracefully and provides powerful features.",
   "keywords": [
     "electron",
@@ -20,8 +20,8 @@
     "lodash": "^4.17.21"
   },
   "devDependencies": {
-    "electrom": "19",
-    "eslint": "7",
+    "electron-json-storage-alt": "18",
+    "eslint": "8",
     "eslint-config-egg": "^5.1.1",
     "eslint-plugin-mocha": "^4.11.0",
     "git-contributor": "*",
