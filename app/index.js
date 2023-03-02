@@ -5,6 +5,7 @@ const path = require('path');
 const _ = require('lodash');
 const WindowManager = require('..');
 const { ipcMain, screen, BrowserWindow } = require('electron');
+const storage = require('electron-json-storage-alt');
 
 const loadingUrl = url.format({
   pathname: path.join(__dirname, 'renderer', 'loading.html'),
@@ -33,11 +34,19 @@ const getRandomPostion = () => {
 };
 
 class App {
-  windowManager = new WindowManager();
+  windowManager = new WindowManager({
+    onStorageSave: (key, data) => {
+      storage.set(key, data);
+    },
+    onStorageReadSync(key) {
+      return storage.getSync(key);
+    },
+  });
 
   init() {
     const mainWindow = this.windowManager.create({
       name: 'main',
+      storageKey: 'main-window-storage',
       loadingView: {
         url: loadingUrl,
       },
