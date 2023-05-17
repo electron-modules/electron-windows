@@ -1,6 +1,6 @@
 {
   "name": "electron-windows",
-  "version": "18.3.0",
+  "version": "18.4.0",
   "description": "Manage multiple windows of Electron gracefully and provides powerful features.",
   "keywords": [
     "electron",
@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "electron": "18",
+    "electron-window-state": "^5.0.3",
     "lodash": "4"
   },
   "devDependencies": {
