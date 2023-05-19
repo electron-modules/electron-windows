@@ -53,6 +53,7 @@ const windowManager = new WindowManager();
 ### create
 
 ```javascript
+const { app } = require('electron');
 const winRef = windowManager.create({
   name: 'window1',
   loadingView: {
@@ -71,12 +72,14 @@ const winRef = windowManager.create({
     },
   },
   openDevTools: true,
+  storageKey: 'storage-filename', // optional. The name of file. Support storage of window state
+  storagePath: app.getPath('userData'), // optional. The path of file, only used when storageKey is not empty 
 });
 ```
 
 ## TODO
 
-- [ ] support storage of window's size and other configuration
+- [ ] support storage of window configuration
 - [ ] clone pointed window
 
 ## License
