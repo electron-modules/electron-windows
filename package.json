@@ -11,6 +11,7 @@
     "lib"
   ],
   "main": "index.js",
+  "types": "./index.d.ts",
   "repository": {
     "type": "git",
     "url": "git://github.com/electron-modules/electron-windows.git"
