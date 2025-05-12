@@ -3,7 +3,6 @@
  *
  * https://github.com/electron-modules/electron-windows
  */
-
 import type { BrowserWindow, BrowserWindowConstructorOptions } from 'electron'
 
 /**

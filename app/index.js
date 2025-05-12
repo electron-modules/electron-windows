@@ -53,7 +53,8 @@ class App {
       browserWindow: {
         webPreferences: {
           enableRemoteModule: false,
-          nodeIntegration: false,
+          // `preload` uses Node's `fs` module, so `nodeIntegration` should be enabled.
+          nodeIntegration: true,
           webSecurity: true,
           webviewTag: true,
           preload: path.join(__dirname, 'renderer', 'preload.js'),

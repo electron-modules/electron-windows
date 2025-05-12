@@ -6,3 +6,9 @@ file.txt
 *.gz
 *.sw*
 *.un~
+
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/

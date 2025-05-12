@@ -1,6 +1,6 @@
 {
   "name": "electron-windows",
-  "version": "18.5.0",
+  "version": "34.0.0",
   "description": "Manage multiple windows of Electron gracefully and provides powerful features.",
   "keywords": [
     "electron",
@@ -18,15 +18,18 @@
     "url": "git://github.com/electron-modules/electron-windows.git"
   },
   "dependencies": {
-    "electron": "18",
+    "electron": "34",
     "electron-window-state": "^5.0.3",
     "lodash": "4"
   },
   "devDependencies": {
+    "@babel/eslint-parser": "^7.27.1",
+    "@playwright/test": "^1.52.0",
+    "@types/node": "^22.15.17",
     "electron-json-storage-alt": "18",
     "eslint": "7",
-    "eslint-config-egg": "^5.1.1",
-    "eslint-plugin-mocha": "^4.11.0",
+    "eslint-config-egg": "12",
+    "eslint-plugin-mocha": "~10.0.0",
     "git-contributor": "*",
     "husky": "*",
     "mocha": "*",
@@ -35,6 +38,7 @@
   "scripts": {
     "dev": "electron ./start.js",
     "test": "nyc --reporter=lcov --reporter=text mocha",
+    "test:e2e": "npx playwright test",
     "lint": "eslint . --fix",
     "contributor": "git-contributor"
   },
