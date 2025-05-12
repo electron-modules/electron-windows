@@ -2,9 +2,11 @@
 
 module.exports = {
   extends: 'eslint-config-egg',
-  parser: 'babel-eslint',
+  // babel-eslint (deprecated) is now @babel/eslint-parser
+  parser: '@babel/eslint-parser',
   parserOptions: {
     ecmaVersion: 2018,
+    requireConfigFile: false,
   },
   rules: {
     'valid-jsdoc': 0,
@@ -26,7 +28,7 @@ module.exports = {
     'no-self-compare': 0,
     'one-var': 0
   },
-  globals:{
+  globals: {
     window: true,
     document: true,
   }
