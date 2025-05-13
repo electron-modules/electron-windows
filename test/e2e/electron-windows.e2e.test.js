@@ -28,7 +28,7 @@ test.describe('test/e2e/electron-windows.e2e.test.js', () => {
 
   test('loadingView option is working', async () => {
     const window = await electronApp.firstWindow();
-
+    await window.waitForLoadState('domcontentloaded');
     expect(await window.title()).toBe('Loading');
     expect(window.url()).toMatch(/renderer\/loading\.html$/);
   });
@@ -48,7 +48,7 @@ test.describe('test/e2e/electron-windows.e2e.test.js', () => {
     await wait();
     const window = await electronApp.firstWindow();
     await window.click('button#new-online');
-    await wait();
+    await wait(10000);
     const windows = electronApp.windows();
 
     expect(windows.length).toBeGreaterThan(1);
