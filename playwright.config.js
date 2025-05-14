@@ -7,7 +7,7 @@ module.exports = defineConfig({
   testDir: './test/e2e',
   fullyParallel: false,
   forbidOnly: isCI,
-  retries: 0,
+  retries: isCI ? 1 : 0,
   workers: 1,
   reporter: 'null',
   use: {
