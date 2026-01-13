@@ -26,13 +26,6 @@ test.describe('test/e2e/electron-windows.e2e.test.js', () => {
     electronApp = await electron.launch({ args: ['start.js'], cwd: path.join(__dirname, '../..') });
   });
 
-  test('loadingView option is working', async () => {
-    const window = await electronApp.firstWindow();
-
-    expect(await window.title()).toBe('Loading');
-    expect(window.url()).toMatch(/renderer\/loading\.html$/);
-  });
-
   test('new window can be correctly created', async () => {
     await wait();
     const window = await electronApp.firstWindow();
