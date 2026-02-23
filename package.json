@@ -30,22 +30,25 @@
     "eslint": "7",
     "eslint-config-egg": "12",
     "eslint-plugin-mocha": "~10.0.0",
-    "git-contributor": "*",
-    "husky": "*",
-    "mocha": "*",
-    "nyc": "*"
+    "git-contributor": "2",
+    "husky": "9",
+    "mocha": "10",
+    "nyc": "17"
   },
   "scripts": {
     "dev": "electron ./start.js",
-    "test": "nyc --reporter=lcov --reporter=text mocha",
+    "pretest": "rm -rf .nyc_output coverage",
+    "test": "nyc mocha",
     "test:e2e": "npx playwright test",
-    "lint": "eslint . --fix",
-    "contributor": "git-contributor"
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "contributor": "git-contributor",
+    "prepare": "husky"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint"
-    }
-  },
-  "license": "MIT"
+  "license": "MIT",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "electron"
+    ]
+  }
 }

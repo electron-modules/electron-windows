@@ -153,3 +153,7 @@ declare class WindowsManager {
 }
 
 export = WindowsManager
+
+declare namespace WindowsManager {
+  export type { Window, StatefulWindow }
+}

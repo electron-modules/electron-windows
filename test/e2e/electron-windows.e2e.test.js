@@ -42,6 +42,7 @@ test.describe('test/e2e/electron-windows.e2e.test.js', () => {
     const window = await electronApp.firstWindow();
     await window.click('button#new-online');
     await wait();
+    await wait();
     const windows = electronApp.windows();
 
     expect(windows.length).toBeGreaterThan(1);

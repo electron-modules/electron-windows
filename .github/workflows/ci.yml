@@ -4,8 +4,9 @@ on:
   workflow_dispatch:
 
   push:
-    branches:
-      - '**'
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
 
 jobs:
   Runner:
@@ -15,19 +16,18 @@ jobs:
       fail-fast: false
       matrix:
         os: [ ubuntu-latest ]
-        node-version: [ 16 ]
+        node-version: [ 20 ]
     steps:
       - name: Checkout Git Source
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
 
       - name: Install dependencies
         run: |
-          npm i npm@6 -g
           npm i
 
       - name: Continuous integration
@@ -36,6 +36,6 @@ jobs:
           npm run test
 
       - name: Code coverage
-        uses: codecov/codecov-action@v3.0.0
+        uses: codecov/codecov-action@v3
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
