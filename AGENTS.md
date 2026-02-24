@@ -31,7 +31,8 @@ npx mocha test/unit/electron-windows.test.js --grep "should create window with d
 
 ### Linting
 ```bash
-pnpm run lint         # Run ESLint with auto-fix
+pnpm run lint         # Run ESLint (no auto-fix)
+pnpm run lint:fix     # Run ESLint with auto-fix
 ```
 
 ## Code Style Guidelines
