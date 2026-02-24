@@ -19,21 +19,20 @@
 
 > Manage multiple windows of Electron gracefully and provide powerful features.
 
+<p align="center"><img src="screenshot.png" width="600px"/></p>
+
 ## Installation
 
 ```bash
 $ npm i electron-windows --save
 ```
 
-## Demo
-
-![](./screenshot.png)
-
 ## Quick Start
 
 ```javascript
 const WindowManager = require('electron-windows')
 
+// Create a window manager instance
 const windowManager = new WindowManager()
 
 // Create a window
@@ -57,13 +56,17 @@ const all = windowManager.getAll()
 
 ## API Reference
 
+### Types
+
+- **Window** - A union type of `StatefulWindow` and common `BrowserWindow`. When `storageKey` option is provided, returns `StatefulWindow`; otherwise returns `BrowserWindow`.
+
 ### `new WindowManager()`
 
 Creates a new WindowManager instance.
 
 ### `windowManager.create(options)`
 
-Creates and manages a new BrowserWindow.
+Creates and manages a new window.
 
 - **options** `Object` - Configuration for the window:
   - **name** `string` - Window identifier, used by `get()`. Default: `'anonymous'`
@@ -77,7 +80,7 @@ Creates and manages a new BrowserWindow.
   - **storagePath** `string` - Custom storage path for window state file
   - **globalUserAgent** `string` - Custom User-Agent for all `loadURL` calls in this window
 
-Returns: `BrowserWindow`
+Returns: `Window` (`BrowserWindow` or `StatefulWindow`)
 
 ### `windowManager.get(name)`
 
@@ -85,7 +88,7 @@ Get a managed window by name.
 
 - **name** `string` - Window name
 
-Returns: `BrowserWindow | undefined`
+Returns: `Window | undefined`
 
 ### `windowManager.getById(id)`
 
@@ -93,7 +96,7 @@ Get a managed window by Electron window id.
 
 - **id** `number` - Window id
 
-Returns: `BrowserWindow | undefined`
+Returns: `Window | undefined`
 
 ### `windowManager.getAll()`
 
@@ -120,7 +123,7 @@ Static method. Set global user agent for all windows.
 | :---: | :---: | :---: | :---: | :---: | :---: |
 [<img src="https://avatars.githubusercontent.com/u/11213298?v=4" width="80px;"/><br/><sub><b>WynterDing</b></sub>](https://github.com/WynterDing)<br/>|[<img src="https://avatars.githubusercontent.com/u/4081746?v=4" width="80px;"/><br/><sub><b>zlyi</b></sub>](https://github.com/zlyi)<br/>|[<img src="https://avatars.githubusercontent.com/u/50158871?v=4" width="80px;"/><br/><sub><b>moshangqi</b></sub>](https://github.com/moshangqi)<br/>
 
-This project follows the git-contributor [spec](https://github.com/xudafeng/git-contributor), auto updated at `Mon Feb 23 2026 15:23:51 GMT+0800`.
+This project follows the git-contributor [spec](https://github.com/xudafeng/git-contributor), auto updated at `Tue Feb 24 2026 17:35:12 GMT+0800`.
 
 <!-- GITCONTRIBUTOR_END -->
 
